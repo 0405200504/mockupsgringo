@@ -37,9 +37,63 @@ a{text-decoration:none;color:inherit}
 .btn-primary:hover{box-shadow:0 0 40px var(--green-glow),0 0 80px rgba(188,247,32,.2);filter:brightness(1.1);transform:translateY(-2px)}
 .btn-full{display:block;width:100%}
 
-/* ── HEADER ── */
-.site-header{background:rgba(10,10,10,.95);backdrop-filter:blur(12px);padding:16px 0;text-align:center;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
-.site-header img{max-width:200px;margin:0 auto}
+/* ── HEADER TICKER ── */
+.ticker-wrap {
+  width: 100%;
+  overflow: hidden;
+  background: var(--green);
+  padding: 12px 0;
+  white-space: nowrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.ticker {
+  display: inline-block;
+  animation: ticker-move 25s linear infinite;
+}
+.ticker__item {
+  display: inline-block;
+  padding: 0 30px;
+  font-size: 0.85rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #000;
+  letter-spacing: 2px;
+}
+@keyframes ticker-move {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ── GALLERY CAROUSEL ── */
+.gallery-section {
+  padding: 40px 0;
+  background: var(--black);
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+}
+.gallery-track {
+  display: flex;
+  gap: 12px;
+  animation: gallery-scroll 60s linear infinite;
+  width: max-content;
+}
+.gallery-track img {
+  width: 280px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  transition: border-color 0.3s;
+}
+.gallery-track img:hover {
+  border-color: var(--green);
+}
+@keyframes gallery-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
 
 /* ── COUNTDOWN ── */
 .countdown-bar{background:var(--black);padding:14px 0;text-align:center;border-bottom:1px solid rgba(255,255,255,.05)}
@@ -266,10 +320,29 @@ src="https://www.facebook.com/tr?id=1137405748507091&ev=PageView&noscript=1"
 </head>
 <body>
 
-<!-- HEADER -->
-<header class="site-header">
-  <div class="container">
-    <a href="#" style="display:inline-block;font-family:'Inter',sans-serif;font-size:1.1rem;font-weight:900;letter-spacing:2px;color:#BCF720;text-transform:uppercase;text-decoration:none;">[ MOCKUPS STREETWEAR ]</a>
+<header class="ticker-wrap">
+  <div class="ticker">
+    <span class="ticker__item">MOCKUPS STREETWEAR</span>
+    <span class="ticker__item">MOCKUPS STREETWEAR</span>
+    <span class="ticker__item">MOCKUPS STREETWEAR</span>
+    <span class="ticker__item">MOCKUPS STREETWEAR</span>
+    <span class="ticker__item">MOCKUPS STREETWEAR</span>
+    <span class="ticker__item">MOCKUPS STREETWEAR</span>
+    <span class="ticker__item">MOCKUPS STREETWEAR</span>
+    <span class="ticker__item">MOCKUPS STREETWEAR</span>
+    <span class="ticker__item">MOCKUPS STREETWEAR</span>
+    <span class="ticker__item">MOCKUPS STREETWEAR</span>
+    <!-- Duplicate for infinite loop -->
+    <span class="ticker__item">MOCKUPS STREETWEAR</span>
+    <span class="ticker__item">MOCKUPS STREETWEAR</span>
+    <span class="ticker__item">MOCKUPS STREETWEAR</span>
+    <span class="ticker__item">MOCKUPS STREETWEAR</span>
+    <span class="ticker__item">MOCKUPS STREETWEAR</span>
+    <span class="ticker__item">MOCKUPS STREETWEAR</span>
+    <span class="ticker__item">MOCKUPS STREETWEAR</span>
+    <span class="ticker__item">MOCKUPS STREETWEAR</span>
+    <span class="ticker__item">MOCKUPS STREETWEAR</span>
+    <span class="ticker__item">MOCKUPS STREETWEAR</span>
   </div>
 </header>
 
@@ -468,6 +541,51 @@ src="https://www.facebook.com/tr?id=1137405748507091&ev=PageView&noscript=1"
         <a href="https://pay.cakto.com.br/puxbwfw_824708" target="_blank" class="btn btn-primary">Comprar agora</a>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- MEMBERSHIP GALLERY CAROUSEL -->
+<section class="gallery-section">
+  <div class="gallery-track">
+    <img src="area-membros/1.png" alt="Área de Membros">
+    <img src="area-membros/2.png" alt="Área de Membros">
+    <img src="area-membros/3.png" alt="Área de Membros">
+    <img src="area-membros/4.png" alt="Área de Membros">
+    <img src="area-membros/5.png" alt="Área de Membros">
+    <img src="area-membros/6.png" alt="Área de Membros">
+    <img src="area-membros/7.png" alt="Área de Membros">
+    <img src="area-membros/8.png" alt="Área de Membros">
+    <img src="area-membros/9.png" alt="Área de Membros">
+    <img src="area-membros/10.png" alt="Área de Membros">
+    <img src="area-membros/11.png" alt="Área de Membros">
+    <img src="area-membros/12.png" alt="Área de Membros">
+    <img src="area-membros/13.png" alt="Área de Membros">
+    <img src="area-membros/14.png" alt="Área de Membros">
+    <img src="area-membros/15.png" alt="Área de Membros">
+    <img src="area-membros/16.png" alt="Área de Membros">
+    <img src="area-membros/17.png" alt="Área de Membros">
+    <img src="area-membros/18.png" alt="Área de Membros">
+    <img src="area-membros/19.png" alt="Área de Membros">
+    <!-- Duplicate for seamless loop -->
+    <img src="area-membros/1.png" alt="Área de Membros">
+    <img src="area-membros/2.png" alt="Área de Membros">
+    <img src="area-membros/3.png" alt="Área de Membros">
+    <img src="area-membros/4.png" alt="Área de Membros">
+    <img src="area-membros/5.png" alt="Área de Membros">
+    <img src="area-membros/6.png" alt="Área de Membros">
+    <img src="area-membros/7.png" alt="Área de Membros">
+    <img src="area-membros/8.png" alt="Área de Membros">
+    <img src="area-membros/9.png" alt="Área de Membros">
+    <img src="area-membros/10.png" alt="Área de Membros">
+    <img src="area-membros/11.png" alt="Área de Membros">
+    <img src="area-membros/12.png" alt="Área de Membros">
+    <img src="area-membros/13.png" alt="Área de Membros">
+    <img src="area-membros/14.png" alt="Área de Membros">
+    <img src="area-membros/15.png" alt="Área de Membros">
+    <img src="area-membros/16.png" alt="Área de Membros">
+    <img src="area-membros/17.png" alt="Área de Membros">
+    <img src="area-membros/18.png" alt="Área de Membros">
+    <img src="area-membros/19.png" alt="Área de Membros">
   </div>
 </section>
 
