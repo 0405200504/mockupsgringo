@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://connect.facebook.net">
-<link rel="preload" as="image" href="imagens/banner mockups.png">
+<link rel="preload" as="image" href="imagens/banner_mockups.jpg">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -75,10 +75,16 @@ a{text-decoration:none;color:inherit}
 }
 .gallery-track {
   display: flex;
-  gap: 12px;
-  animation: gallery-scroll 15s linear infinite;
   width: max-content;
+  animation: gallery-scroll 15s linear infinite;
 }
+.gallery-group {
+  display: flex;
+  gap: 12px;
+  padding-right: 12px;
+  flex-shrink: 0;
+}
+
 .gallery-track img {
   height: 200px;
   width: auto;
@@ -365,7 +371,7 @@ src="https://www.facebook.com/tr?id=1137405748507091&ev=PageView&noscript=1"
   <div class="container">
     <div class="hero-inner">
       <div class="hero-img">
-        <img src="imagens/banner mockups.png" alt="+500 Mockups Streetwear">
+        <img src="imagens/banner_mockups.jpg" alt="+500 Mockups Streetwear">
       </div>
       <div class="hero-content">
         <span class="section-tag">TUDO QUE VOCÊ PRECISA PRA DEIXAR SUA MARCA PROFISSIONAL</span>
@@ -547,46 +553,49 @@ src="https://www.facebook.com/tr?id=1137405748507091&ev=PageView&noscript=1"
 <!-- MEMBERSHIP GALLERY CAROUSEL -->
 <section class="gallery-section">
   <div class="gallery-track">
-    <img src="area-membros/1.png" alt="Área de Membros">
-    <img src="area-membros/2.png" alt="Área de Membros">
-    <img src="area-membros/3.png" alt="Área de Membros">
-    <img src="area-membros/4.png" alt="Área de Membros">
-    <img src="area-membros/5.png" alt="Área de Membros">
-    <img src="area-membros/6.png" alt="Área de Membros">
-    <img src="area-membros/7.png" alt="Área de Membros">
-    <img src="area-membros/8.png" alt="Área de Membros">
-    <img src="area-membros/9.png" alt="Área de Membros">
-    <img src="area-membros/10.png" alt="Área de Membros">
-    <img src="area-membros/11.png" alt="Área de Membros">
-    <img src="area-membros/12.png" alt="Área de Membros">
-    <img src="area-membros/13.png" alt="Área de Membros">
-    <img src="area-membros/14.png" alt="Área de Membros">
-    <img src="area-membros/15.png" alt="Área de Membros">
-    <img src="area-membros/16.png" alt="Área de Membros">
-    <img src="area-membros/17.png" alt="Área de Membros">
-    <img src="area-membros/18.png" alt="Área de Membros">
-    <img src="area-membros/19.png" alt="Área de Membros">
-    <!-- Duplicate exactly with same gap -->
-    <div style="width: 12px; flex-shrink: 0;"></div>
-    <img src="area-membros/1.png" alt="Área de Membros">
-    <img src="area-membros/2.png" alt="Área de Membros">
-    <img src="area-membros/3.png" alt="Área de Membros">
-    <img src="area-membros/4.png" alt="Área de Membros">
-    <img src="area-membros/5.png" alt="Área de Membros">
-    <img src="area-membros/6.png" alt="Área de Membros">
-    <img src="area-membros/7.png" alt="Área de Membros">
-    <img src="area-membros/8.png" alt="Área de Membros">
-    <img src="area-membros/9.png" alt="Área de Membros">
-    <img src="area-membros/10.png" alt="Área de Membros">
-    <img src="area-membros/11.png" alt="Área de Membros">
-    <img src="area-membros/12.png" alt="Área de Membros">
-    <img src="area-membros/13.png" alt="Área de Membros">
-    <img src="area-membros/14.png" alt="Área de Membros">
-    <img src="area-membros/15.png" alt="Área de Membros">
-    <img src="area-membros/16.png" alt="Área de Membros">
-    <img src="area-membros/17.png" alt="Área de Membros">
-    <img src="area-membros/18.png" alt="Área de Membros">
-    <img src="area-membros/19.png" alt="Área de Membros">
+    <div class="gallery-group">
+      <img src="area-membros/1.png" alt="Área de Membros">
+      <img src="area-membros/2.png" alt="Área de Membros">
+      <img src="area-membros/3.png" alt="Área de Membros">
+      <img src="area-membros/4.png" alt="Área de Membros">
+      <img src="area-membros/5.png" alt="Área de Membros">
+      <img src="area-membros/6.png" alt="Área de Membros">
+      <img src="area-membros/7.png" alt="Área de Membros">
+      <img src="area-membros/8.png" alt="Área de Membros">
+      <img src="area-membros/9.png" alt="Área de Membros">
+      <img src="area-membros/10.png" alt="Área de Membros">
+      <img src="area-membros/11.png" alt="Área de Membros">
+      <img src="area-membros/12.png" alt="Área de Membros">
+      <img src="area-membros/13.png" alt="Área de Membros">
+      <img src="area-membros/14.png" alt="Área de Membros">
+      <img src="area-membros/15.png" alt="Área de Membros">
+      <img src="area-membros/16.png" alt="Área de Membros">
+      <img src="area-membros/17.png" alt="Área de Membros">
+      <img src="area-membros/18.png" alt="Área de Membros">
+      <img src="area-membros/19.png" alt="Área de Membros">
+    </div>
+    <!-- Duplicate group -->
+    <div class="gallery-group">
+      <img src="area-membros/1.png" alt="Área de Membros">
+      <img src="area-membros/2.png" alt="Área de Membros">
+      <img src="area-membros/3.png" alt="Área de Membros">
+      <img src="area-membros/4.png" alt="Área de Membros">
+      <img src="area-membros/5.png" alt="Área de Membros">
+      <img src="area-membros/6.png" alt="Área de Membros">
+      <img src="area-membros/7.png" alt="Área de Membros">
+      <img src="area-membros/8.png" alt="Área de Membros">
+      <img src="area-membros/9.png" alt="Área de Membros">
+      <img src="area-membros/10.png" alt="Área de Membros">
+      <img src="area-membros/11.png" alt="Área de Membros">
+      <img src="area-membros/12.png" alt="Área de Membros">
+      <img src="area-membros/13.png" alt="Área de Membros">
+      <img src="area-membros/14.png" alt="Área de Membros">
+      <img src="area-membros/15.png" alt="Área de Membros">
+      <img src="area-membros/16.png" alt="Área de Membros">
+      <img src="area-membros/17.png" alt="Área de Membros">
+      <img src="area-membros/18.png" alt="Área de Membros">
+      <img src="area-membros/19.png" alt="Área de Membros">
+    </div>
   </div>
 </section>
 
