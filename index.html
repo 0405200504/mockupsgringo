@@ -73,35 +73,6 @@ a{text-decoration:none;color:inherit}
   overflow: hidden;
   border-bottom: 1px solid var(--border);
 }
-.gallery-track {
-  display: flex;
-}
-.gallery-group {
-  display: flex;
-  gap: 12px;
-  padding-right: 12px;
-  flex-shrink: 0;
-  animation: gallery-scroll 15s linear infinite;
-  will-change: transform;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-}
-
-.gallery-track img {
-  height: 200px;
-  width: auto;
-  object-fit: contain;
-  border-radius: 12px;
-  border: 1px solid var(--border);
-  transition: border-color 0.3s;
-}
-.gallery-track img:hover {
-  border-color: var(--green);
-}
-@keyframes gallery-scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
-}
 
 /* ── COUNTDOWN ── */
 .countdown-bar{background:var(--black);padding:14px 0;text-align:center;border-bottom:1px solid rgba(255,255,255,.05)}
@@ -496,54 +467,7 @@ src="https://www.facebook.com/tr?id=1137405748507091&ev=PageView&noscript=1"
   </div>
 </section>
 
-<!-- MEMBERSHIP GALLERY CAROUSEL -->
-<section class="gallery-section">
-  <div class="gallery-track">
-    <div class="gallery-group">
-      <img src="area-membros/1.png" alt="Área de Membros">
-      <img src="area-membros/2.png" alt="Área de Membros">
-      <img src="area-membros/3.png" alt="Área de Membros">
-      <img src="area-membros/4.png" alt="Área de Membros">
-      <img src="area-membros/5.png" alt="Área de Membros">
-      <img src="area-membros/6.png" alt="Área de Membros">
-      <img src="area-membros/7.png" alt="Área de Membros">
-      <img src="area-membros/8.png" alt="Área de Membros">
-      <img src="area-membros/9.png" alt="Área de Membros">
-      <img src="area-membros/10.png" alt="Área de Membros">
-      <img src="area-membros/11.png" alt="Área de Membros">
-      <img src="area-membros/12.png" alt="Área de Membros">
-      <img src="area-membros/13.png" alt="Área de Membros">
-      <img src="area-membros/14.png" alt="Área de Membros">
-      <img src="area-membros/15.png" alt="Área de Membros">
-      <img src="area-membros/16.png" alt="Área de Membros">
-      <img src="area-membros/17.png" alt="Área de Membros">
-      <img src="area-membros/18.png" alt="Área de Membros">
-      <img src="area-membros/19.png" alt="Área de Membros">
-    </div>
-    <!-- Duplicate group -->
-    <div class="gallery-group">
-      <img src="area-membros/1.png" alt="Área de Membros">
-      <img src="area-membros/2.png" alt="Área de Membros">
-      <img src="area-membros/3.png" alt="Área de Membros">
-      <img src="area-membros/4.png" alt="Área de Membros">
-      <img src="area-membros/5.png" alt="Área de Membros">
-      <img src="area-membros/6.png" alt="Área de Membros">
-      <img src="area-membros/7.png" alt="Área de Membros">
-      <img src="area-membros/8.png" alt="Área de Membros">
-      <img src="area-membros/9.png" alt="Área de Membros">
-      <img src="area-membros/10.png" alt="Área de Membros">
-      <img src="area-membros/11.png" alt="Área de Membros">
-      <img src="area-membros/12.png" alt="Área de Membros">
-      <img src="area-membros/13.png" alt="Área de Membros">
-      <img src="area-membros/14.png" alt="Área de Membros">
-      <img src="area-membros/15.png" alt="Área de Membros">
-      <img src="area-membros/16.png" alt="Área de Membros">
-      <img src="area-membros/17.png" alt="Área de Membros">
-      <img src="area-membros/18.png" alt="Área de Membros">
-      <img src="area-membros/19.png" alt="Área de Membros">
-    </div>
-  </div>
-</section>
+
 
 <hr class="section-divider">
 
