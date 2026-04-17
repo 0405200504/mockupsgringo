@@ -13,9 +13,9 @@
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --pink:#FF00A8;
-  --pink-hover:#cc0087;
-  --pink-glow:rgba(255,0,168,0.35);
+  --pink:#3300FF;
+  --pink-hover:#2200cc;
+  --pink-glow:rgba(51,0,255,0.35);
   --black:#0A0A0A;
   --card:#1C1C1C;
   --border:#333;
@@ -139,9 +139,9 @@ a{text-decoration:none;color:inherit}
 .bonus-card p{font-size:.78rem;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);text-align:center;line-height:1.6}
 
 /* ── PRICE TABLE ── */
-.price-section{padding:100px 0;background:linear-gradient(180deg, var(--black), #0f0008, var(--black))}
-.price-card{max-width:480px;margin:0 auto;border-radius:24px;overflow:hidden;border:1px solid rgba(255,0,168,0.15);background:var(--card);box-shadow:0 30px 60px rgba(0,0,0,0.5), 0 0 20px rgba(255,0,168,0.05);position:relative;transition:transform 0.3s ease}
-.price-card:hover{transform:translateY(-10px);border-color:rgba(255,0,168,0.4);box-shadow:0 40px 80px rgba(0,0,0,0.6), 0 0 40px rgba(255,0,168,0.1)}
+.price-section{padding:100px 0;background:linear-gradient(180deg, var(--black), #00000f, var(--black))}
+.price-card{max-width:480px;margin:0 auto;border-radius:24px;overflow:hidden;border:1px solid rgba(51,0,255,0.15);background:var(--card);box-shadow:0 30px 60px rgba(0,0,0,0.5), 0 0 20px rgba(51,0,255,0.05);position:relative;transition:transform 0.3s ease}
+.price-card:hover{transform:translateY(-10px);border-color:rgba(51,0,255,0.4);box-shadow:0 40px 80px rgba(0,0,0,0.6), 0 0 40px rgba(51,0,255,0.1)}
 .price-card-head{background:rgba(255,255,255,0.03);padding:40px 32px 32px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.05);position:relative}
 .offer-badge{position:absolute;top:16px;right:16px;background:var(--pink);color:#fff;font-size:0.6rem;font-weight:900;text-transform:uppercase;letter-spacing:1.5px;padding:4px 12px;border-radius:4px;box-shadow:0 0 15px var(--pink-glow)}
 .price-card-head p{font-size:0.85rem;color:var(--muted);margin-top:8px;line-height:1.5;max-width:280px;margin-left:auto;margin-right:auto}
@@ -161,13 +161,13 @@ a{text-decoration:none;color:inherit}
 .compare-section{padding:80px 0}
 .ba-label{position:absolute;top:14px;font-size:.65rem;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;padding:4px 12px;border-radius:100px;backdrop-filter:blur(8px)}
 .ba-label.left{left:14px;background:rgba(239,68,68,.15);border:1px solid rgba(239,68,68,.4);color:#ef4444}
-.ba-label.right{right:14px;background:rgba(255,0,168,.15);border:1px solid rgba(255,0,168,.4);color:var(--pink)}
+.ba-label.right{right:14px;background:rgba(51,0,255,.15);border:1px solid rgba(51,0,255,.4);color:var(--pink)}
 
 /* ── TRANSFORMATION ── */
 .transform-section{padding:80px 0}
 .transform-grid{display:grid;grid-template-columns:1fr auto 1fr;gap:24px;align-items:center;margin-top:48px}
 .tf-card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:28px}
-.tf-card.after{border-color:rgba(255,0,168,.4);background:linear-gradient(160deg,#150010,#22001a)}
+.tf-card.after{border-color:rgba(51,0,255,.4);background:linear-gradient(160deg,#050015,#0a0022)}
 .tf-card h3{font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:2px;margin-bottom:20px;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,.08)}
 .tf-card.before h3{color:#ef4444}
 .tf-card.after h3{color:var(--pink)}
@@ -180,12 +180,12 @@ a{text-decoration:none;color:inherit}
 
 /* ── GUARANTEE ── */
 .guarantee-section{padding:60px 0}
-.guarantee-inner{max-width:680px;margin:0 auto;text-align:center;background:var(--card);border:1px solid rgba(255,0,168,.25);border-radius:24px;padding:48px 40px}
+.guarantee-inner{max-width:680px;margin:0 auto;text-align:center;background:var(--card);border:1px solid rgba(51,0,255,.25);border-radius:24px;padding:48px 40px}
 .guarantee-inner h2{font-size:1.8rem;font-weight:900;margin-bottom:12px}
 .guarantee-inner p{color:var(--muted);font-size:.9rem;line-height:1.8}
 
 /* ── URGENCY STRIP ── */
-.urgency-strip{background:linear-gradient(90deg,#0f0008,var(--card),#0f0008);border-top:1px solid rgba(255,0,168,.2);border-bottom:1px solid rgba(255,0,168,.2);padding:28px 0;text-align:center}
+.urgency-strip{background:linear-gradient(90deg,#00000f,var(--card),#00000f);border-top:1px solid rgba(51,0,255,.2);border-bottom:1px solid rgba(51,0,255,.2);padding:28px 0;text-align:center}
 .urgency-strip h2{font-size:1.6rem;font-weight:900;margin-bottom:8px}
 .urgency-strip p{color:var(--muted);font-size:.9rem;margin-bottom:24px}
 .urgency-strip .btn{font-size:1.1rem;padding:18px 48px}
