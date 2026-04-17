@@ -88,7 +88,8 @@ a{text-decoration:none;color:inherit}
 /* ── HERO ── */
 .hero{padding:20px 0 60px}
 .hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
-.hero-img img{border-radius:16px;width:100%}
+.hero-video-wrap{border-radius:16px;overflow:hidden;width:100%;line-height:0}
+.hero-video-wrap video{width:100%;height:auto;display:block;border-radius:16px;object-fit:cover}
 .hero-content{display:flex;flex-direction:column;gap:18px}
 .hero-title{font-size:2.6rem;font-weight:900;line-height:1.05}
 .hero-desc{font-size:.93rem;color:var(--muted);line-height:1.75}
@@ -308,8 +309,17 @@ src="https://www.facebook.com/tr?id=1137405748507091&ev=PageView&noscript=1"
 <section class="hero">
   <div class="container">
     <div class="hero-inner">
-      <div class="hero-img">
-        <img src="imagens/banner_mockups.jpg" alt="+100 Smart Mockups Streetwear Pack">
+      <div class="hero-video-wrap">
+        <video
+          src="imagens/looping.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="auto"
+          disablepictureinpicture
+          style="pointer-events:none"
+        ></video>
       </div>
       <div class="hero-content">
         <span class="section-tag">+100 SMART MOCKUPS PACK</span>
@@ -317,10 +327,10 @@ src="https://www.facebook.com/tr?id=1137405748507091&ev=PageView&noscript=1"
         <p class="hero-desc">3 years curating, testing, and building the mockup pack that streetwear brands actually need. If you're still pulling random images off Google — this changes everything.</p>
         <p class="hero-editable-note">Every mockup is 100% editable — colors, shadows, background. No Photoshop skills required.</p>
         <div class="price-row">
-          <span class="price-new">$5</span>
-          <span class="price-old">$40.00</span>
+          <span class="price-new">$27</span>
+          <span class="price-old">$100.00</span>
         </div>
-        <a href="https://pay.cakto.com.br/puxbwfw_824708" target="_blank" id="hero-cta" class="btn btn-primary btn-full">Get Instant Access — $5</a>
+        <a href="https://pay.cakto.com.br/puxbwfw_824708" target="_blank" id="hero-cta" class="btn btn-primary btn-full">Get Instant Access — $27</a>
         <div class="trust-row">
           <span class="trust-item">
             <svg viewBox="0 0 24 24" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Secure Checkout
@@ -523,8 +533,8 @@ src="https://www.facebook.com/tr?id=1137405748507091&ev=PageView&noscript=1"
         <p>Get instant access to the complete pack for just</p>
       </div>
       <div class="price-card-body">
-        <p class="pc-old">$40.00</p>
-        <div class="pc-price"><sup>$</sup>5</div>
+        <p class="pc-old">$100.00</p>
+        <div class="pc-price"><sup>$</sup>27</div>
         <p class="pc-once">One-time payment</p>
         <ul class="pc-features">
           <li><svg viewBox="0 0 24 24" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Lifetime Access + All Future Updates</li>
@@ -557,7 +567,7 @@ src="https://www.facebook.com/tr?id=1137405748507091&ev=PageView&noscript=1"
 <!-- URGENCY -->
 <section class="urgency-strip">
   <div class="container">
-    <h2>Only <span class="text-pink">$5</span> — Limited-Time Offer</h2>
+    <h2>Only <span class="text-pink">$27</span> — Limited-Time Offer</h2>
     <p>This price won't last. Lock it in today and level up your brand presentation immediately.</p>
     <a href="https://pay.cakto.com.br/puxbwfw_824708" target="_blank" id="urgency-cta" class="btn btn-primary">Yes, I Want This Now</a>
   </div>
